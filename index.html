@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessPro — студия функционального тренинга</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <div class="logo">Fitness<span>Pro</span></div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#trainers">Тренеры</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#contact" class="nav-btn">Записаться</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- ГЕРО СЕКЦИЯ -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Спецпредложение месяца</div>
+                <h1>Стань лучшей <br><span class="highlight">версией себя</span></h1>
+                <p>Персональные тренировки, групповые занятия и современный зал. Достигай целей с FitnessPro!</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Начать тренировку <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Бесплатное пробное занятие</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number">500+</span><span class="stat-label">Довольных клиентов</span></div>
+                    <div class="stat"><span class="stat-number">20+</span><span class="stat-label">Сертифицированных тренеров</span></div>
+                    <div class="stat"><span class="stat-number">8</span><span class="stat-label">Лет работы</span></div>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="images/hero-fitness.jpg" alt="Тренировка в FitnessPro">
+            </div>
+        </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="images/about-fitness.jpg" alt="Современный тренажёрный зал">
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Почему мы</span>
+                    <h2 class="section-title">Лучшая фитнес-студия <br>в твоём районе</h2>
+                    <p>Мы создали пространство, где каждый чувствует поддержку. Без осуждения, без модных диет — только наука, забота и профессионализм.</p>
+                    <div class="features-list">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Современное оборудование</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Индивидуальный подход</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Удобное расположение</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Дружелюбная атмосфера</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРОГРАММЫ ТРЕНИРОВОК -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Что мы предлагаем</span>
+                <h2 class="section-title">Программы тренировок</h2>
+                <p>Выбери то, что подходит именно тебе</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="images/functional.jpg" alt="Функциональный тренинг">
+                    </div>
+                    <h3>Функциональный тренинг</h3>
+                    <p>Развитие выносливости, силы и координации. Подходит для любого уровня.</p>
+                    <a href="#" class="program-link">Узнать больше →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="images/strength.jpg" alt="Силовые тренировки">
+                    </div>
+                    <h3>Силовые тренировки</h3>
+                    <p>Программа для роста мышечной массы и увеличения силы.</p>
+                    <a href="#" class="program-link">Узнать больше →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="images/cardio.jpg" alt="Кардио тренировки">
+                    </div>
+                    <h3>Кардио & HIIT</h3>
+                    <p>Интенсивные интервальные тренировки для жиросжигания.</p>
+                    <a href="#" class="program-link">Узнать больше →</a>
+                </div>
+                <div class="program-card">
+                    <div class="program-img">
+                        <img src="images/yoga.jpg" alt="Йога и стретчинг">
+                    </div>
+                    <h3>Йога & Стретчинг</h3>
+                    <p>Гибкость, расслабление и восстановление после нагрузок.</p>
+                    <a href="#" class="program-link">Узнать больше →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ТРЕНЕРЫ -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Наша команда</span>
+                <h2 class="section-title">Профессиональные тренеры</h2>
+                <p>Люди, которые помогут тебе достичь результата</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="images/trainer-female.jpg" alt="Анна Ковалёва">
+                    </div>
+                    <h3>Анна Ковалёва</h3>
+                    <p class="trainer-spec">Эксперт по функциональному тренингу</p>
+                    <div class="trainer-social">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="images/trainer-male.jpg" alt="Дмитрий Волков">
+                    </div>
+                    <h3>Дмитрий Волков</h3>
+                    <p class="trainer-spec">Силовой тренер, пауэрлифтинг</p>
+                    <div class="trainer-social">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-img">
+                        <img src="images/trainer-yoga.jpg" alt="Елена Соловьёва">
+                    </div>
+                    <h3>Елена Соловьёва</h3>
+                    <p class="trainer-spec">Инструктор йоги и пилатеса</p>
+                    <div class="trainer-social">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="prices" class="prices">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Тарифы</span>
+                <h2 class="section-title">Доступные абонементы</h2>
+                <p>Выбери план, который подходит твоим целям</p>
+            </div>
+            <div class="prices-grid">
+                <div class="price-card">
+                    <div class="price-name">Старт</div>
+                    <div class="price-value">1 990 ₽<span>/мес</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 8 тренировок в месяц</li>
+                        <li><i class="fas fa-check"></i> Тренажёрный зал</li>
+                        <li><i class="fas fa-check"></i> Раздевалка и душ</li>
+                        <li><i class="fas fa-times"></i> Групповые занятия</li>
+                    </ul>
+                    <button class="price-btn">Выбрать</button>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="price-name">Профи</div>
+                    <div class="price-value">3 490 ₽<span>/мес</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> Безлимит тренировок</li>
+                        <li><i class="fas fa-check"></i> Тренажёрный зал</li>
+                        <li><i class="fas fa-check"></i> Групповые занятия</li>
+                        <li><i class="fas fa-check"></i> Питьевой режим</li>
+                    </ul>
+                    <button class="price-btn">Выбрать</button>
+                </div>
+                <div class="price-card">
+                    <div class="price-name">Персональный</div>
+                    <div class="price-value">7 990 ₽<span>/мес</span></div>
+                    <ul class="price-features">
+                        <li><i class="fas fa-check"></i> 10 персональных тренировок</li>
+                        <li><i class="fas fa-check"></i> План питания</li>
+                        <li><i class="fas fa-check"></i> Контроль прогресса</li>
+                        <li><i class="fas fa-check"></i> Приоритетная запись</li>
+                    </ul>
+                    <button class="price-btn">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАПИСИ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Запишись сейчас</span>
+                    <h2>Первое занятие <span class="highlight">бесплатно!</span></h2>
+                    <p>Оставь заявку и наш менеджер свяжется с тобой в течение 15 минут.</p>
+                    <div class="contact-details">
+                        <div><i class="fas fa-phone-alt"></i> +7 (999) 123-45-67</div>
+                        <div><i class="fas fa-envelope"></i> info@fitnesspro.ru</div>
+                        <div><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Спортивная 15</div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Номер телефона" required>
+                    <input type="email" placeholder="Email">
+                    <select>
+                        <option>Интересует программа</option>
+                        <option>Функциональный тренинг</option>
+                        <option>Силовые тренировки</option>
+                        <option>Кардио / HIIT</option>
+                        <option>Йога / Стретчинг</option>
+                    </select>
+                    <button type="submit" class="btn-primary">Записаться на пробное <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">Fitness<span>Pro</span></div>
+            <div class="footer-links">
+                <a href="#home">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#programs">Программы</a>
+                <a href="#trainers">Тренеры</a>
+                <a href="#prices">Цены</a>
+            </div>
+            <div class="social-links">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-vk"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2026 FitnessPro. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
